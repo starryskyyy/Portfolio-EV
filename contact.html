@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E.V.| Contacts</title>
+    <link rel="icon" href="img/logo.svg">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("M4oQTb691f6Y6eAol");
+        })();
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="row header">
+        <div class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="disabled-link">elizaveta-vygovskaia</a></li>
+                <li class="nav-item"><a href="index.html">_hello</a></li>
+                <li class="nav-item"><a href="about.html">_about-me</a></li>
+                <li class="nav-item"><a href="projects.html">_projects</a></li>
+                <li class="nav-item"><a class="active" href="contact.html">_contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row content">
+        <div class="menu-about">
+            <div id="personal-info">
+                <section>
+                    <div class="accordion-toggle">
+                        <p class="accordion-link accordion-on ">personal-info</p>
+                        <div class="accordion-panel">
+
+                            <div class="tab">
+                                <div class="submenu-contact">
+                                    <div class="menu-logo"><img src="img/mail-fill.png"/></div>
+                                    <p style="color:#959fb1;">vygovskaia.e@gmail.com</p>
+                                </div>
+                                <div class="submenu-contact">
+                                    <div class="menu-logo"><img src="img/phone-fill.png"/></div>
+                                    <p style="color:#959fb1">+19052269525</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="description">
+            <div class="content-item">
+                <p class="header-about"><span id="demo">personal-info</span></p>
+            </div>
+            <div class="content-text">
+                <div class="form-contact" style="line-height: 1.8;">
+                    <form>
+                        <label for="name">_name</label>
+                        <input type="text" name="username" id="name" required>
+                        <br>
+                        <label for="email_id">_email</label>
+                        <input type="email" id="email_id" name="email" required>
+                        <br>
+                        <label for="story">_message</label>
+
+                        <textarea id="story" name="story"
+                                  rows="5" cols="20"></textarea>
+                        <br>
+                        <button type="submit" onclick="sendMail()">submit-message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="code-snippet">
+            <div class="content-item">
+                <p class="header-about">code showcase</p>
+
+            </div>
+            <div style="height:auto; padding: 50px 30px 0 30px;" >
+
+            </div>
+        </div>
+    </div>
+    <div class="row footer">
+        <ul class="nav-list-footer">
+            <li class="nav-item-f"><a class="disabled-link">find me in:</a></li>
+            <li class="nav-item-f"><a style="vertical-align:middle" href="https://www.linkedin.com/in/elizavetav/"
+                                      target="_blank"><img style="vertical-align:middle" class="center"
+                                                           src="img/in.png"></a></li>
+            <li class="nav-item-f"><a style="vertical-align:middle" href="https://www.instagram.com/vy_elizabeth/"
+                                      target="_blank"><img style="vertical-align:middle" class="center"
+                                                           src="img/inst.png"></a>
+            </li>
+            <li class="nav-item-f"><a style="vertical-align:middle" href="https://github.com/starryskyyy"
+                                      target="_blank">@starryskyyy <img style="vertical-align:middle" class="center"
+                                                                        src="img/git.png"></a></li>
+        </ul>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/contact-form.js"></script>
+</body>
+</html>
