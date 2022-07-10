@@ -12,7 +12,7 @@
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init("M4oQTb691f6Y6eAol");
         })();
     </script>
@@ -35,7 +35,7 @@
             <div id="personal-info">
                 <section>
                     <div class="accordion-toggle">
-                        <p class="accordion-link accordion-on ">personal-info</p>
+                        <p class="accordion-link accordion-on ">contact-form</p>
                         <div class="accordion-panel">
 
                             <div class="tab">
@@ -66,12 +66,12 @@
                         <label for="email_id">_email</label>
                         <input type="email" id="email_id" name="email" required>
                         <br>
-                        <label for="story">_message</label>
+                        <label for="message">_message</label>
 
-                        <textarea id="story" name="story"
-                                  rows="5" cols="20"></textarea>
+                        <textarea name="message"
+                                  rows="5" cols="20" id="message"></textarea>
                         <br>
-                        <button type="submit" onclick="sendMail()">submit-message</button>
+                        <button id="btn-submit" onclick="sendMail()" type="submit">submit-message</button>
                     </form>
                 </div>
             </div>
@@ -80,10 +80,24 @@
         <div class="code-snippet">
             <div class="content-item">
                 <p class="header-about">code showcase</p>
-
             </div>
-            <div style="height:auto; padding: 50px 30px 0 30px;" >
-
+            <div class =" contact" style="height:auto; padding: 50px 30px 0 30px;">
+                <span>1&nbsp;&nbsp;</span><span class="f-pi">const </span><span class="f-p">message</span><span
+                    class="f-pi"> = </span><span>{</span>
+                <br>
+                <span>2&nbsp;&nbsp;</span>&nbsp;<span class="f-p">name</span><span>:</span> <span class="f-o">"<span
+                    class="name-code"></span>"</span>
+                <br>
+                <span>3&nbsp;&nbsp;</span>&nbsp;<span class="f-p">email</span><span>:</span> <span class="f-o">"<span
+                    class="email-code"></span>"</span>
+                <br>
+                <span>4&nbsp;&nbsp;</span>&nbsp;<span class="f-p">message</span><span>:</span> <span class="f-o">"<span
+                    class="message-code" style="width:60%"></span>"</span>
+                <br>
+                <span>5&nbsp;&nbsp;</span>&nbsp;<span>date:</span><span class="f-o">"<span
+                    class="date"></span>"</span>
+                <br>
+                <span>6&nbsp;&nbsp;}</span>
             </div>
         </div>
     </div>
