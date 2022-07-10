@@ -493,7 +493,6 @@ section {
     height: 67%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
     border-radius: 10px;
     border: 1px solid #152838;
     padding: 12px;
@@ -766,6 +765,7 @@ input[type=text]:focus,  textarea:focus, input[type=email]:focus  {
     border: 1px solid #B1BBCD;
     background-color: #011321;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -774,4 +774,19 @@ input:-webkit-autofill:active{
 }
 input:-webkit-autofill{
     -webkit-text-fill-color: #959fb1 !important;
+}
+#btn-submit{
+    width: 25%;
+    background-color: #1E2D3D;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact{
+    margin-left: 15%;
+    margin-top: 15%;
+    width:80%;
 }
